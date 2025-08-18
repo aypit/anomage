@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomage Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta property="og:title" content="Anomages Quiz" />
+    <meta property="og:description" content="To discover which Anomage you resemble, take the Anomages Quiz!" />
+    <meta property="og:image" content="https://www.anomage.w3w.agency/images/xpostimage.png" />
+    <meta property="og:url" content="https://www.anomage.w3w.agency/" />
+    <meta name="twitter:card" content="https://www.anomage.w3w.agency/images/xpostimage.png" />
+    <meta name="twitter:site" content="@watzenweb3" />
+    <meta name="twitter:creator" content="@watzenweb3" />
+
+</head>
+<body>
+    
+    <div id="welcome-screen" class="poll-section welcome-screen">
+        <h1 class="question">Welcome to the Anomage Quiz!</h1>
+        <p>Which of the 9 members of Team Anoma are you closest to?</p>
+        <p>Are you curious? Which of their answers will you choose? Who do you have in common with? Are you ready to find out with this quiz?</p>
+        <button id="start-quiz-button" class="action-button">Let's get started!</button>
+    </div>
+
+    <div class="container quiz-container-hidden">
+        <div id="poll-1" class="poll-section">
+            <div class="question-image-container">
+                <img src="images/Q1.png" alt="Soru 1 Görseli">
+            </div>
+            <h1 class="question">1. The scroll is blank. The protocol whispers: "Declare your intent." What do you write?</h1>
+            <div class="options-container" data-poll-id="1">
+                <button class="option-button" data-option-id="A">"To ripple through worlds unseen with purpose unshaken."</button>
+                <button class="option-button" data-option-id="B">"Whatever breaks the loop and confuses the validator."</button>
+                <button class="option-button" data-option-id="C">"To coordinate across domains, but with really good vibes."</button>
+                <button class="option-button" data-option-id="D">"I won't tell. But I'll signal."</button>
+            </div>
+        </div>
+
+        <div id="poll-2" class="poll-section">
+            <div class="question-image-container">
+                <img src="images/Q2.png" alt="Soru 2 Görseli">
+            </div>
+            <h1 class="question">2. A solver appears, cloaked in zero-knowledge. What do you offer in return for truth?</h1>
+            <div class="options-container" data-poll-id="2">
+                <button class="option-button" data-option-id="A">A song encoded with multi-chain desire.</button>
+                <button class="option-button" data-option-id="B">A mirror with no reflection.</button>
+                <button class="option-button" data-option-id="C">A meme too dangerous to be canonical.</button>
+                <button class="option-button" data-option-id="D">A handshake across realms.</button>
+            </div>
+        </div>
+        
+        <div id="poll-3" class="poll-section">
+            <div class="question-image-container">
+                <img src="images/Q3.png" alt="Soru 3 Görseli">
+            </div>
+            <h1 class="question">3. You find an intent floating, half-formed. What do you do with it?</h1>
+            <div class="options-container" data-poll-id="3">
+                <button class="option-button" data-option-id="A">Complete it. And remix it.</button>
+                <button class="option-button" data-option-id="B">Question its syntax until it laughs.</button>
+                <button class="option-button" data-option-id="C">Invite five friends to co-author it.</button>
+                <button class="option-button" data-option-id="D">Burn it and watch what grows from the ashes.</button>
+            </div>
+        </div>
+        
+        <div id="poll-4" class="poll-section">
+            <div class="question-image-container">
+                <img src="images/Q4.png" alt="Soru 4 Görseli">
+            </div>
+            <h1 class="question">4. The network pulses like a heartbeat. What are you listening for?</h1>
+            <div class="options-container" data-poll-id="4">
+                <button class="option-button" data-option-id="A">The rhythm of coordination.</button>
+                <button class="option-button" data-option-id="B">The gaps where something absurd could slip in.</button>
+                <button class="option-button" data-option-id="C">The stories no transaction tells.</button>
+                <button class="option-button" data-option-id="D">Nothing. I just like the hum.</button>
+            </div>
+        </div>
+
+        <div id="poll-5" class="poll-section">
+            <div class="question-image-container">
+                <img src="images/Q5.png" alt="Soru 5 Görseli">
+            </div>
+            <h1 class="question">5. Anoma collapses the old silos. What do you build from the rubble?</h1>
+            <div class="options-container" data-poll-id="5">
+                <button class="option-button" data-option-id="A">A plaza for unpredictable collaboration.</button>
+                <button class="option-button" data-option-id="B">A protocol-shaped joke no one understands yet.</button>
+                <button class="option-button" data-option-id="C">A scroll that updates itself every time someone dreams.</button>
+                <button class="option-button" data-option-id="D">Nothing. I just came to watch.</button>
+            </div>
+        </div>
+
+        <div id="poll-6" class="poll-section">
+            <div class="question-image-container">
+                <img src="images/Q6.png" alt="Soru 6 Görseli">
+            </div>
+            <h1 class="question">6. A solver says: "You must match to be known." How do you respond?</h1>
+            <div class="options-container" data-poll-id="6">
+                <button class="option-button" data-option-id="A">"Only if matching doesn't mean merging."</button>
+                <button class="option-button" data-option-id="B">"Bold of you to assume I want to be known."</button>
+                <button class="option-button" data-option-id="C">"Fine, but only with people who laugh at the same block explorer jokes."</button>
+                <button class="option-button" data-option-id="D">"Let's try it. Worst case, it's another story."</button>
+            </div>
+        </div>
+        
+        <div id="poll-7" class="poll-section">
+            <div class="question-image-container">
+                <img src="images/Q7.png" alt="Soru 7 Görseli">
+            </div>
+            <h1 class="question">7. The core devs encoded a game in the chain itself. What's your move?</h1>
+            <div class="options-container" data-poll-id="7">
+                <button class="option-button" data-option-id="A">Break it just to see if they'll notice.</button>
+                <button class="option-button" data-option-id="B">Invite the whole network to play, and keep score with memes.</button>
+                <button class="option-button" data-option-id="C">Turn it into a collaborative puzzle that spans multiple chains.</button>
+                <button class="option-button" data-option-id="D">Decode the ending before the first round begins.</button>
+            </div>
+        </div>
+
+        <div id="poll-8" class="poll-section">
+            <div class="question-image-container">
+                <img src="images/Q8.png" alt="Soru 8 Görseli">
+            </div>
+            <h1 class="question">8. A new domain opens, but it obeys no rules. What do you call it?</h1>
+            <div class="options-container" data-poll-id="8">
+                <button class="option-button" data-option-id="A">The Place Between Protocols.</button>
+                <button class="option-button" data-option-id="B">The Intent Carnival.</button>
+                <button class="option-button" data-option-id="C">The Network of Whispered Agreements.</button>
+                <button class="option-button" data-option-id="D">Home.</button>
+            </div>
+        </div>
+
+        <div id="poll-9" class="poll-section">
+            <div class="question-image-container">
+                <img src="images/Q9.png" alt="Soru 9 Görseli">
+            </div>
+            <h1 class="question">9. A user emits an intent no one else understands. What do you do?</h1>
+            <div class="options-container" data-poll-id="9">
+                <button class="option-button" data-option-id="A">Translate it into art.</button>
+                <button class="option-button" data-option-id="B">Match it anyway, just to see what happens.</button>
+                <button class="option-button" data-option-id="C">Ignore it. Sounds like a skill issue.</button>
+                <button class="option-button" data-option-id="D">Build a new space for people like them.</button>
+            </div>
+        </div>
+
+        <div id="poll-10" class="poll-section">
+            <div class="question-image-container">
+                <img src="images/Q10.png" alt="Soru 10 Görseli">
+            </div>
+            <h1 class="question">10. The protocol asks, "Why are you here?" You respond:</h1>
+            <div class="options-container" data-poll-id="10">
+                <button class="option-button" data-option-id="A">"To help shape the unwritten scrolls."</button>
+                <button class="option-button" data-option-id="B">"Because someone has to ask the dumb questions."</button>
+                <button class="option-button" data-option-id="C">"To find joy in the coordination dance."</button>
+                <button class="option-button" data-option-id="D">"I forgot, but now I'm staying."</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="result-container">
+                <div class="result-box">
+                    <h2 id="result-title"></h2>
+                    <div class="result-image-container">
+                        <img id="result-image" src="" alt="Quiz Result Image">
+                    </div>
+                    <p id="result-handle" class="twitter-handle"></p>
+                    <div id="personality-traits">
+                        <h3>Same Personality Traits as [name]</h3>
+                        <ul id="traits-list"></ul>
+                    </div>
+                    <p id="final-result-text"></p>
+                    <div class="button-group">
+                        <button id="share-on-x-button" class="action-button">Share on X</button>
+                        <button id="download-button" class="action-button">Download Image</button>
+                        <button id="solve-again-button" class="action-button">Solve Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
