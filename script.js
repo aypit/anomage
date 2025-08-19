@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var resultHandle = profileData[lastResultType].handle;
             var quizLink = 'https://anomage.vercel.app/';
             
-            var tweetText = 'Just completed the Anomage Quiz by "@watzenweb3" and learned that "' + resultHandle + '", "' + resultTitleText + '", is the closest person to me. Would you like to learn too? > ' + quizLink;;
+            var tweetText = 'Just completed the Anomage Quiz by @watzenweb3 and learned that "' + resultHandle + '", "' + resultTitleText + '", is the closest person to me. Would you like to learn too? > ' + quizLink;;
             
             var encodedText = encodeURIComponent(tweetText);
             var twitterUrl = 'https://twitter.com/intent/tweet?text=' + encodedText;
