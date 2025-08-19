@@ -80,6 +80,18 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "The Meme Lord of Web3 (With a Brain)",
             traits: ['Witty and Sarcastic', 'Playful and Lighthearted', 'Bold and Opinionated', 'Crypto-Savvy and Engaged']
         }
+    'Zach': {
+    image: 'zjcio.jpg',  // Zach'in profil resmi dosya adı
+    handle: '@zjcio',
+    title: "The Joyful Architect of Belonging",
+    traits: ['Enthusiastic and Passionate', 'Playful and Humorous', 'Community-Oriented and Engaging', 'Creative and Strategic']
+},
+'TheWolf': {
+    image: 'intrenche1.jpg',  // TheWolf'un profil resmi dosya adı
+    handle: '@intrenche1',
+    title: "The Strategist with Street Cred",
+    traits: ['Experienced and Confident', 'Crypto-Savvy and Trend-Aware', 'Creative and Strategic', 'Community-Oriented and Engaging']
+}
     };
 
     const resultMessages = {
@@ -119,6 +131,14 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "The Meme Lord of Web3 (With a Brain)",
             text: "You don’t mince words, you dice them, season them with sarcasm, and serve them with a side of “I told you so.” You’re bold, you’re loud (in a good way), and your takes cut through the noise like a well-placed GIF in a DAO thread. You live at the intersection of crypto chaos and comedic relief. Rug pulls? You called it. New L2 drama? You’ve got a thread and a meme ready. But underneath the jokes is real signal, because you don’t just watch the space, you get it. Your playfulness is strategic. You know that a joke lands better than a lecture, and that humor is the ultimate onboarding tool. People follow you for laughs, but stay for the insights, even if they have to read between the punchlines. You’re opinionated, and unapologetically so. You’ve got the receipts, the repos, and the sarcastic tweets to back it up. But you’re not here to gatekeep, you’re here to stir the pot and set the table. Decentralized, of course. In a space full of buzzwords and bravado, you’re the reminder that Web3 doesn’t have to be boring, and shouldn't take itself too seriously. You are the troll with purpose, the alpha wrapped in a meme, the voice that makes crypto fun and a little bit smarter."
         }
+    'Zach': {
+    title: "The Joyful Architect of Belonging",
+    text: "You bring the spark. The momentum. The laughter that turns ideas into movement and people into community. Your passion doesn't burn people out, it lights them up. It's the kind of enthusiasm that makes others *want* to get involved, because when you care, it's impossible not to feel it. You're playful, sure but you're no lightweight. Your humor disarms, your creativity surprises, and your strategy? Hidden in plain sight, under layers of charm and connection. You build systems without making them feel like systems. You organize people without making it feel like work. You don't just *gather* people — you *activate* them. Online, offline, in a group chat or a crowded room, you create the kind of energy that says: \"Let's do something amazing together.\" And then… you actually *do* it. You think like a designer, plan like a strategist, and vibe like a meme wizard. You know timing matters, aesthetics matter, *people* matter and you blend it all like it's instinct. You're not here to take up space. You're here to shape it. And the communities you build aren't just connected they're alive."
+},
+'TheWolf': {
+    title: "The Strategist with Street Cred",
+    text: "You don't chase trends, you *read* them, ride them, and sometimes start them before they even have a name. Your experience isn't just a list of projects or past roles, it's a toolkit. And you know exactly when to use what. You move through the crypto space with a steady hand and sharp eyes. You've seen hype come and go. You've watched ecosystems rise and fall. And yet, you're still *here*, building smarter, adapting faster, and helping others navigate the noise. You're not just crypto-savvy, you're *culture-savvy*. You know how narratives shape adoption. You understand what communities need *before* they say it. You see structure in chaos — and opportunity in the cracks. Creative and strategic, you blend instinct with insight. You build systems, but you also know how to tell the story. You design for humans, not just headlines. And when you bring people together, it's not just for engagement, it's for direction, alignment, momentum. You don't need to speak the loudest to lead. You lead by building what lasts, by creating clarity, and by making space for others to thrive. In a world of noise and novelty, you are signal and substance. And that's what real influence looks like."
+}
     };
 
     // Hide quiz container initially
@@ -213,9 +233,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (lastResultType) {
             var resultTitleText = resultMessages[lastResultType].title; 
             var resultHandle = profileData[lastResultType].handle;
-            var quizLink = window.location.href;
+            var quizLink = 'https://anomage.vercel.app/';
             
-            var tweetText = 'Just completed the Anomages Quiz by @watzenweb3 and found out that ' + resultTitleText + ' ' + resultHandle + ' is the person I resemble the most. Want to find out too? > ' + quizLink;
+            var tweetText = var tweetText = 'Just completed the Anomage Quiz by "@watzenweb3" and learned that "' + resultHandle + '", "' + resultTitleText + '", is the closest person to me. Would you like to learn too? > ' + quizLink;;
             
             var encodedText = encodeURIComponent(tweetText);
             var twitterUrl = 'https://twitter.com/intent/tweet?text=' + encodedText;
